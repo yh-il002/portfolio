@@ -9,72 +9,82 @@
 @use 'destyle.css/destyle.css' as *;
 
 img {
-  width: 100%;
-  height: auto;
-  pointer-events: none;
-  -webkit-touch-callout: none;
-  user-select: none;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    user-select: none;
 }
+
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
+
 em {
-  font-style: normal;
+    font-style: normal;
 }
+
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
+
 body {
-  font-family: $fontFamily;
-  font-size: 1.4rem;
-  font-weight: 400;
-  // line-height: 1.7;
-  color: $colorBlack;
-  word-break: normal;
-  overflow-wrap: anywhere;
-  background: $colorWhite;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  line-break: strict;
+    font-family: $fontFamily;
+    font-size: 1.4rem;
+    font-weight: 400;
+    // line-height: 1.7;
+    color: $colorBlack;
+    word-break: normal;
+    overflow-wrap: anywhere;
+    background: $colorWhite;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-break: strict;
 }
 
 .sp-only {
-  @include mq($from: tablet) {
-    display: none;
-  }
+    @include mq($from: tablet) {
+        display: none;
+    }
 }
+
 .tab-and-sp {
-  @include mq($from: tablet) {
-    display: none;
-  }
+    @include mq($from: tablet) {
+        display: none;
+    }
 }
+
 .tab-only {
-  @include mq($until: tablet) {
-    display: none !important;
-  }
-  @include mq($from: desktop) {
-    display: none;
-  }
+    @include mq($until: tablet) {
+        display: none !important;
+    }
+
+    @include mq($from: desktop) {
+        display: none;
+    }
 }
+
 .pc-and-tab {
-  @include mq($until: tablet) {
-    display: none !important;
-  }
+    @include mq($until: tablet) {
+        display: none !important;
+    }
 }
+
 .pc-only {
-  @include mq($until: tablet) {
-    display: none !important;
-  }
+    @include mq($until: tablet) {
+        display: none !important;
+    }
 }
 
 .sp-br {
-  display: none;
-  @include mq($until: desktop) {
-    display: block;
-  }
+    display: none;
+
+    @include mq($until: desktop) {
+        display: block;
+    }
 }
