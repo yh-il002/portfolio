@@ -34,7 +34,11 @@ const count = ref(0)
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '/src/assets/scss/utility/mq' as *;
+@use '/src/assets/scss/utility/variables' as *;
+@use '/src/assets/scss/common.scss' as *;
+
 .read-the-docs {
   color: #888;
 }

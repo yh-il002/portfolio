@@ -1,0 +1,58 @@
+/*
+ * メディアクエリ用ミックスイン
+ *
+ * $from: 指定した画面幅を超過した状態をブレークポイントに設定する
+ * $until: 指定した画面幅以下の状態をブレークポイントに設定する
+ */
+@use 'sass:map';
+// $from と $until に指定できるキーと設定される値
+// カスタマイズ可能
+$mq-breakpoints: (
+  desktop: 960px,
+  tablet: 768px,
+  mobile: 390px,
+) !default;
+
+// breakpointsに該当の値（mobile等）がない場合、指定した値を返す
+@function get-breakpoint($bp) {
+  $mq-breakpoint: map.get($mq-breakpoints, $bp);
+
+  $breakpoint: if($mq-breakpoint, $mq-breakpoint, $bp);
+  @return $breakpoint;
+}
+
+@mixin mq($from: null, $until: null) {
+  $condition: '(min-width: 0)';
+
+  @if $from and $until {
+    $from: get-breakpoint($from);
+    $until: get-breakpoint($until) - 0.02px;
+    $condition: '(min-width: #{$from}) and (max-width: #{$until})';
+  } @else if $from {
+    $from: get-breakpoint($from);
+    $condition: '(min-width: #{$from})';
+  } @else if $until {
+    $until: get-breakpoint($until) - 0.02px;
+    $condition: '(max-width: #{$until})';
+  }
+
+  @media #{$condition} {
+    @content;
+  }
+}
+
+// orientation: landscape 用ミックスイン
+// SP横持ちの時のスタイル指定用
+@mixin mq-landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+// orientation: portrait 用ミックスイン
+// SP縦持ちの時のスタイル指定用
+@mixin mq-portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
