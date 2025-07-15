@@ -13,11 +13,18 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/tsconfig": "^0.7.0",
     "destyle.css": "^4.0.1",
     "eslint": "^9.31.0",
+    "postcss-html": "^1.8.0",
+    "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "stylelint": "^16.21.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-recess-order": "^7.1.0",
+    "stylelint-config-recommended-scss": "^15.0.1",
+    "stylelint-config-standard-scss": "^15.0.1",
     "typescript": "~5.8.3",
     "vite": "^7.0.4",
     "vue-tsc": "^2.2.12"
