@@ -149,7 +149,7 @@ type Experience = {
 
 外部アクションや `gh-pages` ブランチは使わない。リポジトリ側は Settings → Pages のソースを「GitHub Actions」に設定するだけでよい。
 
-`vite.config.ts` の `base` はプロジェクトページとして公開する場合 `'/<リポジトリ名>/'`、ユーザーページ（`<username>.github.io`）として公開する場合 `'/'` とする。公開先が確定した時点で値を決める。
+公開先は `github.com/yh-il002/portfolio` のプロジェクトページとなるため、`vite.config.ts` の `base` は `'/portfolio/'` を設定する。公開 URL は `https://yh-il002.github.io/portfolio/`。
 
 ## テスト
 
