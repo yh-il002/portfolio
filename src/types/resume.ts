@@ -4,18 +4,19 @@ export type ProfileLink = {
 }
 
 export type Profile = {
-  name: string
   title: string
+  age: number
+  gender: string
+  experienceYears: number
   summary: string
-  location?: string
+  pitch: string
   links: ProfileLink[]
 }
 
-/** 1: 学習中 / 2: 実務あり / 3: 主戦力 / 4: 指導可。範囲外の値は表示時にクランプする */
+/** 1: 独学 / 2: 経験あり / 3: 得意。範囲外の値は表示時にクランプする */
 export type Skill = {
   name: string
-  level: number
-  years?: number
+  level: 1 | 2 | 3
 }
 
 export type SkillCategory = {
@@ -23,7 +24,7 @@ export type SkillCategory = {
   items: Skill[]
 }
 
-/** "YYYY-MM" 形式。end が null なら現職 */
+/** "YYYY-MM" 形式。end が null なら現在進行中 */
 export type Period = {
   start: string
   end: string | null
@@ -32,12 +33,15 @@ export type Period = {
 export type Experience = {
   id: string
   company: string
+  project: string
   role: string
   period: Period
-  summary: string
-  scale?: string
-  highlights: string[]
+  teamSize: number | null
+  employment: string
+  duties: string
   tags: string[]
+  /** 技術名ではない取り組み・概念・職能（フィルタ対象外） */
+  practices: string[]
 }
 
 export type Resume = {

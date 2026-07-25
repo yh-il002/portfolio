@@ -1,78 +1,437 @@
 {
   "profile": {
-    "name": "山田 太郎",
-    "title": "バックエンドエンジニア",
-    "summary": "Web アプリケーションのサーバーサイド開発を中心に8年間従事してきました。設計から運用まで一貫して担当し、直近ではチームのテックリードとして技術選定と若手の育成にも関わっています。可用性とコストの両立を意識した基盤づくりを得意としています。",
-    "location": "東京都",
-    "links": [
-      { "label": "GitHub", "url": "https://github.com/yh-il002" },
-      { "label": "Email", "url": "mailto:example@example.com" }
-    ]
+    "title": "フロントエンドエンジニア",
+    "age": 37,
+    "gender": "男性",
+    "experienceYears": 15,
+    "summary": "自動車業界で2年ほど働いたのち、リーマンショックの時期にIT業界へ転職しました。受託開発企業で工場向け生産管理システムやECサイト運用に携わり、2年ほどバックエンドエンジニアを経験。その後WEB制作会社へ転職し、13年ほどフロントエンドエンジニアを続けています。",
+    "pitch": "今までは、バックエンドエンジニア2年、フロントエンドエンジニア13年とエンジニアとして業務に携わってまいりました。新たなことに挑戦したく、現在はインフラ（主にAWS）も学習しております。1年間ほどPM業務も経験しました。",
+    "links": []
   },
   "skills": [
     {
+      "category": "担当領域",
+      "items": [
+        { "name": "フロント開発", "level": 3 },
+        { "name": "進行管理", "level": 3 },
+        { "name": "UIデザイン", "level": 2 },
+        { "name": "Webデザイン", "level": 2 },
+        { "name": "Webアプリ", "level": 2 },
+        { "name": "ネイティブアプリ", "level": 1 },
+        { "name": "UX・企画", "level": 1 },
+        { "name": "IA・サイト設計", "level": 1 },
+        { "name": "スマフォ対応", "level": 3 },
+        { "name": "レスポンシブ", "level": 3 },
+        { "name": "ｸﾛｽﾌﾞﾗｳｻﾞ対応", "level": 3 },
+        { "name": "描画処理", "level": 1 },
+        { "name": "広告デザイン", "level": 1 }
+      ]
+    },
+    {
+      "category": "ソフトウェア",
+      "items": [
+        { "name": "Figma", "level": 3 },
+        { "name": "Photoshop", "level": 2 },
+        { "name": "Illustrator", "level": 2 },
+        { "name": "Flash", "level": 2 },
+        { "name": "Sketch", "level": 2 },
+        { "name": "XD", "level": 1 }
+      ]
+    },
+    {
       "category": "言語",
       "items": [
-        { "name": "TypeScript", "level": 4, "years": 6 },
-        { "name": "Go", "level": 3, "years": 4 },
-        { "name": "Python", "level": 2, "years": 2 }
+        { "name": "HTML4/5", "level": 3 },
+        { "name": "CSS2/3", "level": 3 },
+        { "name": "JavaScript", "level": 3 },
+        { "name": "ActionScript", "level": 1 },
+        { "name": "Canvas（HTML5）", "level": 2 },
+        { "name": "DOM", "level": 3 },
+        { "name": "TypeScript", "level": 2 },
+        { "name": "Node.js", "level": 1 },
+        { "name": "Python", "level": 1 },
+        { "name": "Ruby", "level": 1 },
+        { "name": "Java", "level": 2 },
+        { "name": "PHP", "level": 2 },
+        { "name": "C#", "level": 2 }
       ]
     },
     {
-      "category": "フレームワーク",
+      "category": "その他フレームワーク等",
       "items": [
-        { "name": "React", "level": 3, "years": 5 },
-        { "name": "NestJS", "level": 3, "years": 3 }
-      ]
-    },
-    {
-      "category": "インフラ",
-      "items": [
-        { "name": "AWS", "level": 3, "years": 5 },
-        { "name": "Terraform", "level": 3, "years": 3 },
-        { "name": "Kubernetes", "level": 2, "years": 2 }
+        { "name": "jQuery", "level": 3 },
+        { "name": "React", "level": 3 },
+        { "name": "Redux", "level": 2 },
+        { "name": "Next.js", "level": 3 },
+        { "name": "Vue.js", "level": 3 },
+        { "name": "AngularJS", "level": 1 },
+        { "name": "Sass", "level": 3 },
+        { "name": "LESS", "level": 2 },
+        { "name": "Tailwind CSS", "level": 2 },
+        { "name": "Bootstrap", "level": 2 }
       ]
     }
   ],
   "experiences": [
     {
-      "id": "acme-2023",
-      "company": "株式会社アクメ",
-      "role": "テックリード",
-      "period": { "start": "2023-04", "end": null },
-      "summary": "BtoB SaaS の基盤刷新を主導。モノリスからの段階的な分割と、デプロイ基盤の再構築を担当しています。",
-      "scale": "チーム6名 / MAU 20万",
-      "highlights": [
-        "デプロイ頻度を週1回から日次へ引き上げ、リードタイムを5日から半日に短縮した",
-        "Terraform による構成管理を導入し、環境構築の手順書を廃止した",
-        "オンボーディング資料を整備し、新規参画者の立ち上がりを3週間から1週間に縮めた"
-      ],
-      "tags": ["TypeScript", "AWS", "Terraform", "NestJS", "Kubernetes"]
+      "id": "n-2025-06",
+      "company": "N社",
+      "project": "WEBサイト制作、運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2025-06", "end": null },
+      "teamSize": 10,
+      "employment": "フリー・個人事業主",
+      "duties": "フロントエンドエンジニア",
+      "tags": ["TypeScript", "Vue.js", "React", "Next.js", "jotai", "AWS Amplify", "CI/CD", "ClaudeCode", "Codex", "Gemini CLI", "GitHub Copilot", "ヘッドレスCMS"],
+      "practices": ["要件定義", "進行管理", "AIを活用した実装", "自作Skillsによるチーム内業務改善", "自作MCPサーバー（Python）", "ローカルRAGの構築", "チャンク分割→ベクトル化 (Embedding)→ベクトルDB保存→自然言語による類似度検索", "プロンプトエンジニアリング", "コンテキストエンジニアリング", "ハーネスエンジニアリング", "ループエンジニアリング", "自立実行改善サイクルによる実装の自動化", "複数モデルでの敵対的レビューを自動化", "仕様駆動開発", "TDD（テスト駆動開発）"]
     },
     {
-      "id": "beta-2020",
-      "company": "ベータ株式会社",
-      "role": "サーバーサイドエンジニア",
-      "period": { "start": "2020-01", "end": "2023-03" },
-      "summary": "toC 向けメディアサービスの API 開発と、検索基盤のリプレースを担当しました。",
-      "scale": "チーム10名 / MAU 80万",
-      "highlights": [
-        "検索基盤を刷新し、レスポンスタイムの p95 を 1.2 秒から 180 ミリ秒に改善した",
-        "負荷試験を CI に組み込み、性能劣化をリリース前に検知できるようにした"
-      ],
-      "tags": ["Go", "AWS", "React"]
+      "id": "p-2024-06",
+      "company": "P社",
+      "project": "Salesforce製品受託開発",
+      "role": "PM",
+      "period": { "start": "2024-06", "end": "2025-05" },
+      "teamSize": 13,
+      "employment": "フリー・個人事業主",
+      "duties": "PM、カスタマーサポート",
+      "tags": ["Salesforce", "Tableau", "TeamSpirit", "JavaScript"],
+      "practices": ["要件定義", "顧客折衝", "進行管理"]
     },
     {
-      "id": "gamma-2018",
-      "company": "ガンマ合同会社",
-      "role": "Web エンジニア",
-      "period": { "start": "2018-04", "end": "2019-12" },
-      "summary": "受託開発でコーポレートサイトと業務システムを制作。要件定義から実装、保守までを担当しました。",
-      "highlights": [
-        "年間12件のプロジェクトを納品し、うち5件で継続保守契約につなげた",
-        "社内で使い回せるコンポーネント集を整備し、実装工数を平均2割削減した"
-      ],
-      "tags": ["TypeScript", "React", "Python"]
+      "id": "kojin-2022-10",
+      "company": "個人",
+      "project": "美容系サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2022-10", "end": "2024-05" },
+      "teamSize": 1,
+      "employment": "フリー・個人事業主",
+      "duties": "Wordpressを使用したサイト運用",
+      "tags": ["WordPress", "HTML", "CSS", "JavaScript"],
+      "practices": []
+    },
+    {
+      "id": "y-2022-09",
+      "company": "Y社",
+      "project": "宿泊予約事業システム開発",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2022-09", "end": "2022-09" },
+      "teamSize": 7,
+      "employment": "フリー・個人事業主",
+      "duties": "React.js、Next.js、TypeScriptを使用した雑誌作成システム開発",
+      "tags": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Recoil"],
+      "practices": []
+    },
+    {
+      "id": "kojin-2022-04",
+      "company": "個人",
+      "project": "美容系サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2022-04", "end": "2022-08" },
+      "teamSize": 1,
+      "employment": "フリー・個人事業主",
+      "duties": "Wordpressを使用したサイト改修",
+      "tags": ["WordPress", "HTML", "CSS", "JavaScript"],
+      "practices": []
+    },
+    {
+      "id": "r-2022-03",
+      "company": "R社",
+      "project": "MVNO事業サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2022-03", "end": "2022-03" },
+      "teamSize": 10,
+      "employment": "フリー・個人事業主",
+      "duties": "ejsを使用した静的サイト運用",
+      "tags": ["ejs", "HTML", "CSS", "JavaScript"],
+      "practices": []
+    },
+    {
+      "id": "a-2021-10",
+      "company": "A社",
+      "project": "リアルタイムネットオークションせり上げシステムリプレイス",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2021-10", "end": "2022-02" },
+      "teamSize": 5,
+      "employment": "フリー・個人事業主",
+      "duties": "Storybookを使用したリアルタイムネットオークションせり上げシステムのモックアップ作成",
+      "tags": ["Storybook", "React", "TypeScript", "Sass", "Windows"],
+      "practices": []
+    },
+    {
+      "id": "kojin-2021-03",
+      "company": "個人",
+      "project": "美容系サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2021-03", "end": "2021-06" },
+      "teamSize": 1,
+      "employment": "フリー・個人事業主",
+      "duties": "Wordpressを使用したサイト改修",
+      "tags": ["WordPress", "HTML", "CSS", "JavaScript"],
+      "practices": []
+    },
+    {
+      "id": "d-2020-03",
+      "company": "D社",
+      "project": "WEBスクールサイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2020-03", "end": "2021-02" },
+      "teamSize": 5,
+      "employment": "正社員",
+      "duties": "Next.jsを使用した静的サイト改修",
+      "tags": ["Next.js", "React", "PostCSS", "TypeScript", "ヘッドレスCMS"],
+      "practices": []
+    },
+    {
+      "id": "d-2018-06",
+      "company": "D社",
+      "project": "インターネット回線事業サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2018-06", "end": "2020-02" },
+      "teamSize": 10,
+      "employment": "正社員",
+      "duties": "ctpテンプレートコーディング",
+      "tags": ["ctp", "Sass", "JavaScript", "gulp", "CakePHP", "Vagrant"],
+      "practices": []
+    },
+    {
+      "id": "d-2017-10-20",
+      "company": "D社",
+      "project": "インターネット回線事業サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2017-10", "end": "2018-05" },
+      "teamSize": 10,
+      "employment": "フリー・個人事業主",
+      "duties": "ctpテンプレートコーディング",
+      "tags": ["ctp", "Sass", "JavaScript", "gulp", "CakePHP", "Vagrant"],
+      "practices": []
+    },
+    {
+      "id": "d-2017-10-19",
+      "company": "D社",
+      "project": "MVNO事業サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2017-10", "end": "2018-05" },
+      "teamSize": 20,
+      "employment": "フリー・個人事業主",
+      "duties": "HTML、ectテンプレートコーディング",
+      "tags": ["HTML", "ect", "Sass", "JavaScript", "Vue.js", "gulp", "webpack"],
+      "practices": []
+    },
+    {
+      "id": "d-2017-01-18",
+      "company": "D社",
+      "project": "店舗常設型VRサービスプロモーションサイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2017-01", "end": "2017-10" },
+      "teamSize": 5,
+      "employment": "フリー・個人事業主",
+      "duties": "HTMLコーディング",
+      "tags": ["ejs", "Sass", "JavaScript", "jQuery", "gulp"],
+      "practices": []
+    },
+    {
+      "id": "d-2017-01-17",
+      "company": "D社",
+      "project": "エナジー事業サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2017-01", "end": "2017-10" },
+      "teamSize": 5,
+      "employment": "フリー・個人事業主",
+      "duties": "PHPテンプレートコーディング",
+      "tags": ["HTML", "CSS", "JavaScript", "jQuery", "gulp", "PHP", "Vagrant"],
+      "practices": []
+    },
+    {
+      "id": "d-2017-01-16",
+      "company": "D社",
+      "project": "動画サイトLP制作",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2017-01", "end": "2017-10" },
+      "teamSize": 5,
+      "employment": "フリー・個人事業主",
+      "duties": "HTMLコーディング",
+      "tags": ["HTML", "JSX", "Sass", "JavaScript", "React", "Redux", "webpack", "Sketch"],
+      "practices": []
+    },
+    {
+      "id": "d-2016-10",
+      "company": "D社",
+      "project": "メディアサイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2016-10", "end": "2016-12" },
+      "teamSize": 10,
+      "employment": "フリー・個人事業主",
+      "duties": "HTMLコーディング",
+      "tags": ["HTML", "Sass", "JavaScript", "jQuery", "gulp"],
+      "practices": []
+    },
+    {
+      "id": "i-2016-07",
+      "company": "I社",
+      "project": "HTML5ハイブリッドアプリ改修",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2016-07", "end": "2016-09" },
+      "teamSize": 5,
+      "employment": "正社員",
+      "duties": "アプリUI、アニメーション作成",
+      "tags": ["HTML", "LESS", "JavaScript", "jQuery", "Knockout.js", "Photoshop", "Illustrator", "AWS EC2"],
+      "practices": []
+    },
+    {
+      "id": "i-2016-04",
+      "company": "I社",
+      "project": "鉄道会社プロモーションサイト制作",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2016-04", "end": "2016-06" },
+      "teamSize": 2,
+      "employment": "正社員",
+      "duties": "HTMLコーディング、アニメーション作成",
+      "tags": ["HTML", "Sass", "JavaScript", "ActionScript", "Photoshop", "Illustrator", "Flash", "gulp"],
+      "practices": []
+    },
+    {
+      "id": "i-2016-01",
+      "company": "I社",
+      "project": "HTML5ハイブリッドアプリ改修",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2016-01", "end": "2016-03" },
+      "teamSize": 5,
+      "employment": "正社員",
+      "duties": "アプリUI、アニメーション作成",
+      "tags": ["HTML", "LESS", "JavaScript", "jQuery", "Knockout.js", "Photoshop", "Illustrator", "AWS EC2"],
+      "practices": []
+    },
+    {
+      "id": "i-2015-07",
+      "company": "I社",
+      "project": "MVNO事業サイト運用",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2015-07", "end": "2015-12" },
+      "teamSize": 6,
+      "employment": "正社員",
+      "duties": "HTMLコーディング、テスト",
+      "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Selenium", "Ruby", "WebdriverIO", "Photoshop", "Illustrator"],
+      "practices": []
+    },
+    {
+      "id": "i-2015-01",
+      "company": "I社",
+      "project": "HTML5ハイブリッドアプリ開発",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2015-01", "end": "2015-06" },
+      "teamSize": 5,
+      "employment": "正社員",
+      "duties": "アプリUI、アニメーション作成",
+      "tags": ["HTML", "LESS", "JavaScript", "jQuery", "Knockout.js", "Photoshop", "Illustrator", "AWS EC2"],
+      "practices": []
+    },
+    {
+      "id": "i-2014-10",
+      "company": "I社",
+      "project": "お米のブランディングサイト制作",
+      "role": "フロントエンドエンジニア",
+      "period": { "start": "2014-10", "end": "2014-12" },
+      "teamSize": 2,
+      "employment": "正社員",
+      "duties": "要件定義、Webサイト制作",
+      "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Photoshop", "Illustrator"],
+      "practices": []
+    },
+    {
+      "id": "u-2013-07",
+      "company": "U社",
+      "project": "電子カルテ、レセプトコンピューター開発",
+      "role": "システムエンジニア",
+      "period": { "start": "2013-07", "end": "2014-09" },
+      "teamSize": 30,
+      "employment": "正社員",
+      "duties": "要件定義、システム開発、テスト",
+      "tags": ["VisualStudio", "SQL Server", "Windows Server", "C#"],
+      "practices": []
+    },
+    {
+      "id": "u-2013-04",
+      "company": "U社",
+      "project": "芸能事務所管理システム開発(リプレース)",
+      "role": "プログラマー",
+      "period": { "start": "2013-04", "end": "2013-06" },
+      "teamSize": 8,
+      "employment": "正社員",
+      "duties": "システム開発、テスト",
+      "tags": ["VisualStudio", "SQL Server", "Windows Server", "C#"],
+      "practices": []
+    },
+    {
+      "id": "u-2013-01",
+      "company": "U社",
+      "project": "レッカー車管理システム開発(リプレース)",
+      "role": "プログラマー",
+      "period": { "start": "2013-01", "end": "2013-03" },
+      "teamSize": 3,
+      "employment": "正社員",
+      "duties": "システム開発、テスト",
+      "tags": ["VisualStudio", "SQL Server", "Windows Server", "C#"],
+      "practices": []
+    },
+    {
+      "id": "u-2012-10",
+      "company": "U社",
+      "project": "ECサイトシステム改修",
+      "role": "プログラマー",
+      "period": { "start": "2012-10", "end": "2012-12" },
+      "teamSize": 3,
+      "employment": "正社員",
+      "duties": "システム改修、テスト",
+      "tags": ["Eclipse", "MySQL", "Smarty", "CSS", "NaviCat", "EC Cube", "Windows Server", "PHP"],
+      "practices": []
+    },
+    {
+      "id": "u-2012-04",
+      "company": "U社",
+      "project": "工業系 生産管理システム開発",
+      "role": "プログラマー",
+      "period": { "start": "2012-04", "end": "2012-09" },
+      "teamSize": 6,
+      "employment": "正社員",
+      "duties": "システム開発、テスト",
+      "tags": ["NetBeans", "Java", "MySQL", "JSP", "CSS", "Windows Server"],
+      "practices": []
+    },
+    {
+      "id": "f-2012-02",
+      "company": "F社",
+      "project": "金融系 基幹システム開発",
+      "role": "プログラマー",
+      "period": { "start": "2012-02", "end": "2012-03" },
+      "teamSize": 8,
+      "employment": "契約社員",
+      "duties": "システム開発、テスト",
+      "tags": ["Eclipse", "Java", "Seasar2", "MySQL"],
+      "practices": []
+    },
+    {
+      "id": "kojin-2011-04",
+      "company": "個人",
+      "project": "美容室サイト構築、運用",
+      "role": "ディレクション / コーダー / インフラ",
+      "period": { "start": "2011-04", "end": "2012-01" },
+      "teamSize": 1,
+      "employment": "フリー・個人事業主",
+      "duties": "要件定義、サイト制作、運用",
+      "tags": ["HTML", "CSS", "JavaScript", "Photoshop", "Illustrator"],
+      "practices": []
+    },
+    {
+      "id": "f-2011-04",
+      "company": "F社",
+      "project": "ITスクール運営",
+      "role": "教材作成 / 講師アシスタント",
+      "period": { "start": "2011-04", "end": "2012-01" },
+      "teamSize": 10,
+      "employment": "契約社員",
+      "duties": "講習カリキュラム作成、講習支援",
+      "tags": ["Eclipse", "Java", "PHP", "Windows", "Linux(CentOS)"],
+      "practices": ["統合開発環境"]
     }
   ]
 }

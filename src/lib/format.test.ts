@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { clampLevel, formatDuration, formatPeriod } from './format'
+import {
+  LEVEL_LABELS,
+  MAX_LEVEL,
+  clampLevel,
+  formatDuration,
+  formatPeriod,
+} from './format'
 
 describe('formatPeriod', () => {
   it('終了月がある期間を整形する', () => {
@@ -42,11 +48,22 @@ describe('clampLevel', () => {
     expect(clampLevel(0)).toBe(1)
   })
 
-  it('上限を超える値は 4 に丸める', () => {
-    expect(clampLevel(9)).toBe(4)
+  it('上限を超える値は 3 に丸める', () => {
+    expect(clampLevel(9)).toBe(3)
   })
 
   it('小数は四捨五入する', () => {
     expect(clampLevel(2.6)).toBe(3)
+  })
+})
+
+describe('スキルレベル', () => {
+  it('3段階のラベルを定義する', () => {
+    expect(MAX_LEVEL).toBe(3)
+    expect(LEVEL_LABELS).toEqual({
+      1: '独学',
+      2: '経験あり',
+      3: '得意',
+    })
   })
 })

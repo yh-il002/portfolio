@@ -6,11 +6,14 @@ function makeExperience(id: string, tags: string[]): Experience {
   return {
     id,
     company: `${id} 社`,
+    project: 'プロジェクト',
     role: 'エンジニア',
     period: { start: '2020-01', end: null },
-    summary: '',
-    highlights: [],
+    teamSize: 1,
+    employment: '正社員',
+    duties: '開発',
     tags,
+    practices: [],
   }
 }
 
@@ -37,6 +40,15 @@ describe('filterExperiences', () => {
 
   it('どの経歴も満たさない組み合わせでは空を返す', () => {
     expect(filterExperiences(experiences, ['Go', 'Terraform'])).toEqual([])
+  })
+
+  it('practices はフィルタ対象に含めない', () => {
+    const practiceOnly = {
+      ...makeExperience('practice', []),
+      practices: ['React'],
+    }
+    expect(filterExperiences([practiceOnly], ['React'])).toEqual([])
+    expect(buildTagOptions([practiceOnly], [])).toEqual([])
   })
 })
 

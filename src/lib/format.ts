@@ -1,13 +1,12 @@
 import type { Period } from '../types/resume'
 
 export const LEVEL_LABELS: Record<number, string> = {
-  1: '学習中',
-  2: '実務あり',
-  3: '主戦力',
-  4: '指導可',
+  1: '独学',
+  2: '経験あり',
+  3: '得意',
 }
 
-export const MAX_LEVEL = 4
+export const MAX_LEVEL = 3
 
 /** "YYYY-MM" を年と月に分解する */
 function parseMonth(value: string): { year: number; month: number } {

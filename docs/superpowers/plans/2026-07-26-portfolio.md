@@ -401,7 +401,7 @@ export type Resume = {
 ```json
 {
   "profile": {
-    "name": "山田 太郎",
+    "name": "<非掲載>",
     "title": "バックエンドエンジニア",
     "summary": "Web アプリケーションのサーバーサイド開発を中心に8年間従事してきました。設計から運用まで一貫して担当し、直近ではチームのテックリードとして技術選定と若手の育成にも関わっています。可用性とコストの両立を意識した基盤づくりを得意としています。",
     "location": "東京都",
@@ -438,7 +438,7 @@ export type Resume = {
   "experiences": [
     {
       "id": "acme-2023",
-      "company": "株式会社アクメ",
+      "company": "企業A",
       "role": "テックリード",
       "period": { "start": "2023-04", "end": null },
       "summary": "BtoB SaaS の基盤刷新を主導。モノリスからの段階的な分割と、デプロイ基盤の再構築を担当しています。",
@@ -452,7 +452,7 @@ export type Resume = {
     },
     {
       "id": "beta-2020",
-      "company": "ベータ株式会社",
+      "company": "企業B",
       "role": "サーバーサイドエンジニア",
       "period": { "start": "2020-01", "end": "2023-03" },
       "summary": "toC 向けメディアサービスの API 開発と、検索基盤のリプレースを担当しました。",
@@ -465,7 +465,7 @@ export type Resume = {
     },
     {
       "id": "gamma-2018",
-      "company": "ガンマ合同会社",
+      "company": "企業C",
       "role": "Web エンジニア",
       "period": { "start": "2018-04", "end": "2019-12" },
       "summary": "受託開発でコーポレートサイトと業務システムを制作。要件定義から実装、保守までを担当しました。",
