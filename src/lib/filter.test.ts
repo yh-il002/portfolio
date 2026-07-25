@@ -52,6 +52,12 @@ describe('buildTagOptions', () => {
     expect(tags).toEqual(['AWS', 'React', 'Go', 'Terraform', 'TypeScript'])
   })
 
+  it('選択状態に関わらずタグ順序は変わらない', () => {
+    const tagsNoSelection = buildTagOptions(experiences, []).map((o) => o.tag)
+    const tagsWithSelection = buildTagOptions(experiences, ['React']).map((o) => o.tag)
+    expect(tagsWithSelection).toEqual(tagsNoSelection)
+  })
+
   it('未選択時の count はそのタグ単独での該当件数になる', () => {
     const options = buildTagOptions(experiences, [])
     expect(options.find((o) => o.tag === 'React')?.count).toBe(2)
@@ -79,5 +85,14 @@ describe('buildTagOptions', () => {
       count: 1,
       disabled: false,
     })
+  })
+
+  it('1つの経歴内で重複したタグは1件として扱う', () => {
+    const experiencesWithDup: Experience[] = [
+      makeExperience('x', ['Python', 'Python', 'Docker']),
+      makeExperience('y', ['Python']),
+    ]
+    const options = buildTagOptions(experiencesWithDup, [])
+    expect(options.find((o) => o.tag === 'Python')?.count).toBe(2)
   })
 })
