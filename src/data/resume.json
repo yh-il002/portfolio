@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "name": "山田 太郎",
+    "title": "バックエンドエンジニア",
+    "summary": "Web アプリケーションのサーバーサイド開発を中心に8年間従事してきました。設計から運用まで一貫して担当し、直近ではチームのテックリードとして技術選定と若手の育成にも関わっています。可用性とコストの両立を意識した基盤づくりを得意としています。",
+    "location": "東京都",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/yh-il002" },
+      { "label": "Email", "url": "mailto:example@example.com" }
+    ]
+  },
+  "skills": [
+    {
+      "category": "言語",
+      "items": [
+        { "name": "TypeScript", "level": 4, "years": 6 },
+        { "name": "Go", "level": 3, "years": 4 },
+        { "name": "Python", "level": 2, "years": 2 }
+      ]
+    },
+    {
+      "category": "フレームワーク",
+      "items": [
+        { "name": "React", "level": 3, "years": 5 },
+        { "name": "NestJS", "level": 3, "years": 3 }
+      ]
+    },
+    {
+      "category": "インフラ",
+      "items": [
+        { "name": "AWS", "level": 3, "years": 5 },
+        { "name": "Terraform", "level": 3, "years": 3 },
+        { "name": "Kubernetes", "level": 2, "years": 2 }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "acme-2023",
+      "company": "株式会社アクメ",
+      "role": "テックリード",
+      "period": { "start": "2023-04", "end": null },
+      "summary": "BtoB SaaS の基盤刷新を主導。モノリスからの段階的な分割と、デプロイ基盤の再構築を担当しています。",
+      "scale": "チーム6名 / MAU 20万",
+      "highlights": [
+        "デプロイ頻度を週1回から日次へ引き上げ、リードタイムを5日から半日に短縮した",
+        "Terraform による構成管理を導入し、環境構築の手順書を廃止した",
+        "オンボーディング資料を整備し、新規参画者の立ち上がりを3週間から1週間に縮めた"
+      ],
+      "tags": ["TypeScript", "AWS", "Terraform", "NestJS", "Kubernetes"]
+    },
+    {
+      "id": "beta-2020",
+      "company": "ベータ株式会社",
+      "role": "サーバーサイドエンジニア",
+      "period": { "start": "2020-01", "end": "2023-03" },
+      "summary": "toC 向けメディアサービスの API 開発と、検索基盤のリプレースを担当しました。",
+      "scale": "チーム10名 / MAU 80万",
+      "highlights": [
+        "検索基盤を刷新し、レスポンスタイムの p95 を 1.2 秒から 180 ミリ秒に改善した",
+        "負荷試験を CI に組み込み、性能劣化をリリース前に検知できるようにした"
+      ],
+      "tags": ["Go", "AWS", "React"]
+    },
+    {
+      "id": "gamma-2018",
+      "company": "ガンマ合同会社",
+      "role": "Web エンジニア",
+      "period": { "start": "2018-04", "end": "2019-12" },
+      "summary": "受託開発でコーポレートサイトと業務システムを制作。要件定義から実装、保守までを担当しました。",
+      "highlights": [
+        "年間12件のプロジェクトを納品し、うち5件で継続保守契約につなげた",
+        "社内で使い回せるコンポーネント集を整備し、実装工数を平均2割削減した"
+      ],
+      "tags": ["TypeScript", "React", "Python"]
+    }
+  ]
+}
