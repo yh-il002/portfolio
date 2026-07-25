@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ポートフォリオ</title>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme')
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          if (saved === 'dark' || (saved === null && prefersDark)) {
+            document.documentElement.classList.add('dark')
+          }
+        } catch (e) {
+          /* localStorage が使えない環境ではライトテーマのまま */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
